@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Σοχός Θεσσαλονίκης</title>
+        <meta charset="utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+   #menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left:-100%;
+
+  width: 50%;
+  height: 100%;
+
+  margin: 0;
+  padding: 8px 0;
+
+  list-style: none;
+
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+  transition-duration: .25s;
+
+}
+
+a{
+    font-family: "Gentium Plus", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+    margin-left:10px;
+    margin-top: 60px;
+    color:black;
+    border-spacing: 3cm;;
+}
+
+a:hover{
+    color: rgb(69, 103, 14);
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+
+  color: #333;
+
+  
+  font-size: 20px;
+  font-weight: 60;
+
+  text-decoration: none;
+
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+         
+        </style>
+    
+    </head>
+
+    <body>
+    <div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+               <li><a class="menu__item" href="sights.html">Αξιοθεατα</a></li>
+                <li><a class="menu__item"class="menu__item" classhref="museums.html">Mουσεια</a></li>
+                <li><a class="menu__item" href="taverns.html">Ταβερνες</a></li>
+                <!--<li>Καφετέριες</li>-->
+                <li><a class="menu__item" href="local_prods.html">Τοπικα Προϊοντα</a></li>
+                <li><a class="menu__item" href="https://www.booking.com/searchresults.el.html?aid=318615&label=New_Greek_EL_GR_27026349385-QXtLJSPeIP_80J0br3yCkwS217289183938%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atidsa-199483742665%3Alp20377%3Ali%3Adec%3Adm&gclid=Cj0KCQjw3bm3BhDJARIsAKnHoVVvBcbePJ6yiQrLNngO7NRHIR62iocJ97jPsNvOSGGr2jPqpCkmMe8aAoMkEALw_wcB&highlighted_hotels=10146873&redirected=1&city=-828568&hlrd=no_dates&source=hotel&expand_sb=1&keep_landing=1&sid=2e68e10aa1d36f3a0ffe19842b8782cc">Διαμονη</a></li>
+             </ul>
+  </div>
+   
+        <h1>Σοxός Θεσσαλονίκης</h1>
+        <h5><b>Καλωσήρθατε στον Σοχό!</b></h5>
+     <body>
+</html>
